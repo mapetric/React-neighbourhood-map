@@ -2,12 +2,29 @@ import React, { Component } from 'react'
 
 class Main extends Component {
     state = {
-        map: '',
-        infoWindow: ''
+        mapGoogle: '',
+        infoWindow: '',
+        markers: '',
+        myLocations: require("../JSON/myPlaces.json").myLocations
+    }
+
+    updateMarkers = () => {
+        let markers = this.state.myLocations.filter((location) => location.showing).map((location) => {
+            const {lat, lng, title} = location
+            const map = this.state.mapGoogle
+            const marker = new window.google.maps.Marker({
+                position: {lat, lng},
+                map,
+                title,
+                animation: window.google.maps.Animation.DROP
+            })
+            return marker
+        })
+        this.setState({ markers })
     }
 
     initMap = () => {
-        const map = new window.google.maps.Map(document.getElementById('map'), {
+        const mapGoogle = new window.google.maps.Map(document.getElementById('map'), {
             center: { lat: 45.810000, lng: 15.976318 },
             zoom: (16),
             mapTypeControl: false
@@ -15,7 +32,8 @@ class Main extends Component {
         const infoWindow = new window.google.maps.InfoWindow({
             content: 'contentString'
         })
-        this.setState({ map, infoWindow })
+        this.setState({ mapGoogle, infoWindow })
+        this.updateMarkers()
     }
 
     componentDidMount() {

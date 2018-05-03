@@ -1,0 +1,81 @@
+{
+    "myLocations" : [
+        {
+            "title": "Zagreb Central Station",
+            "lat": 45.804671,
+            "lng":  15.978812,
+            "type": "Transit",
+            "showing": true
+        },
+        {
+            "title": "Mali Medo",
+            "lat": 45.815808,
+            "lng": 15.976524,
+            "type": "Restaurant",
+            "showing": true
+        },
+        {
+            "title": "Stone Gate",
+            "lat": 45.815730,
+            "lng": 15.975237,
+            "type":  "Sightseeing",
+            "showing": true
+        },
+        {
+            "title": "Botanical Garren",
+            "lat": 45.804944,
+            "lng": 15.972202,
+            "type":  "Sightseeing",
+            "showing": true
+        },
+        {
+            "title": "Nokturno",
+            "lat": 45.814799,
+            "lng": 15.977093,
+            "type": "Restaurant",
+            "showing": true
+        },
+        {
+            "title": "Cinnema Europa",
+            "lat": 45.811814,
+            "lng": 15.973370,
+            "type": "Entertainment",
+            "showing": true
+        },
+        {
+            "title": "Under The Gric Cannon",
+            "lat": 45.814204,
+            "lng": 15.973660,
+            "type": "Sightseeing",
+            "showing": true
+        },
+        {
+            "title": "Tortureum - Museum of Torture",
+            "lat": 45.814394,
+            "lng": 15.975747,
+            "type": "Museum",
+            "showing": true
+        },
+        {
+            "title": "Tourist Information Center",
+            "lat": 45.812713,
+            "lng": 15.978520,
+            "type": "Information",
+            "showing": true
+        },
+        {
+            "title": "Strossmayer Gallery of Old Masters",
+            "lat": 45.809159,
+            "lng": 15.978568,
+            "type": "Museum",
+            "showing": true
+        },
+        {
+            "title": "Cathedral of Zagreb",
+            "lat": 45.814510,
+            "lng": 15.979797,
+            "type": "Sightseeing",
+            "showing": true
+        }
+    ]
+}
