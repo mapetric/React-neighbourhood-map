@@ -1,0 +1,17 @@
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.map-container {
+    width: calc(100% - 250px)
+}
+
+.sidebar {
+    background-color: black;
+    width: 250px;
+}
+
+#map {
+    height: 100vh;
+}
