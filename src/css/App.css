@@ -7,11 +7,146 @@
     width: calc(100% - 250px)
 }
 
-.sidebar {
-    background-color: black;
-    width: 250px;
+.side-bar-container {
+    background-color: #292929;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 250px;
 }
 
 #map {
     height: 100vh;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    max-height: 100vh;
+    max-width: 250px;
+}
+
+hr {
+    margin: 20px 0;
+    border: 1px inset #c06014;
+    width: 80%;
+}
+
+.content h2{
+    color: #fff;
+    font-size: 2em;
+}
+
+.content li{
+    color: #fff;
+    list-style: none;
+    margin: 10px;
+}
+
+.content ul{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    overflow-y: auto;
+    height: auto;
+}
+
+.content input[type=text] {
+    font-size: 1.5em;
+    border-radius: 10px;
+    background-color: #c06014;
+    text-align: center;
+    color: #fff;
+    padding: 5px;
+    border-color: #fff;
+    max-width: 80%;
+}
+
+.content select {
+    font-size: 1.5em;
+    border-radius: 10px;
+    background-color: #c06014;
+    text-align: center;
+    color: #fff;
+    padding: 5px;
+    border-color: #fff;
+    min-height: 2em;
+}
+
+.content select:focus {
+    background-color: #3B8EA5;
+}
+
+.content select:hover {
+    background-color: #3B8EA5;
+}
+
+.content input[type=text]:focus {
+    background-color: #3B8EA5;
+}
+
+.content input[type=text]:hover {
+    background-color: #3B8EA5;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #ccc;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #ccc;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #ccc;
+}
+
+.list-item {
+    background-color: #c06014;
+    border-radius: 0 50px 0 50px;
+    align-items: center;
+    justify-content: center;
+    min-width: 200px;
+}
+
+.list-item:hover {
+    background-color: #3B8EA5;
+    cursor: pointer;
+}
+
+.list-item:focus {
+    background-color: #3B8EA5;
+}
+
+.list-item p {
+    width: 70%;
+    padding: 20px;
+    margin: auto;
+}
+
+#map {
+    height: 100vh;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #555;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #c06014;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #3B8EA5;
 }
