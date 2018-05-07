@@ -5,77 +5,88 @@
             "lat": 45.804671,
             "lng":  15.978812,
             "type": "Transit",
-            "showing": true
+            "showing": true,
+            "venue_id": "583f145fa36ecd1d87b74032"
         },
         {
             "title": "Mali Medo",
             "lat": 45.815808,
             "lng": 15.976524,
             "type": "Restaurant",
-            "showing": true
+            "showing": true,
+            "venue_id": "4c445548dcd61b8d93247b56"
         },
         {
             "title": "Stone Gate",
             "lat": 45.815730,
             "lng": 15.975237,
             "type":  "Sightseeing",
-            "showing": true
+            "showing": true,
+            "venue_id": "519521a0498ec922104d5fc0"
         },
         {
             "title": "Botanical Garren",
             "lat": 45.804944,
             "lng": 15.972202,
             "type":  "Sightseeing",
-            "showing": true
+            "showing": true,
+            "venue_id": "583ca39da55db039f593aea1"
         },
         {
             "title": "Nokturno",
             "lat": 45.814799,
             "lng": 15.977093,
             "type": "Restaurant",
-            "showing": true
+            "showing": true,
+            "venue_id": "4b8e6282f964a520322033e3"
         },
         {
             "title": "Cinnema Europa",
             "lat": 45.811814,
             "lng": 15.973370,
             "type": "Entertainment",
-            "showing": true
+            "showing": true,
+            "venue_id": "4bb7dbdc53649c74a36546fb"
         },
         {
             "title": "Under The Gric Cannon",
             "lat": 45.814204,
             "lng": 15.973660,
             "type": "Sightseeing",
-            "showing": true
+            "showing": true,
+            "venue_id": "4cb828fd7148f04d3278cdab"
         },
         {
             "title": "Tortureum - Museum of Torture",
             "lat": 45.814394,
             "lng": 15.975747,
             "type": "Museum",
-            "showing": true
+            "showing": true,
+            "venue_id": "55a127d6498e2b2b8f75a31d"
         },
         {
             "title": "Tourist Information Center",
             "lat": 45.812713,
             "lng": 15.978520,
             "type": "Information",
-            "showing": true
+            "showing": true,
+            "venue_id": "5221c12111d25b22f3f81022"
         },
         {
             "title": "Strossmayer Gallery of Old Masters",
             "lat": 45.809159,
             "lng": 15.978568,
             "type": "Museum",
-            "showing": true
+            "showing": true,
+            "venue_id": "5102e54de4b0840c0056f742"
         },
         {
             "title": "Cathedral of Zagreb",
             "lat": 45.814510,
             "lng": 15.979797,
             "type": "Sightseeing",
-            "showing": true
+            "showing": true,
+            "venue_id": "4bb7dda453649c74716846fb"
         }
     ]
 }
