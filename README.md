@@ -22,3 +22,7 @@ After Node is installed in your system, follow the below steps.
 A new browser window open automatically displaying the app.  If it doesn't, navigate to [http://localhost:3000/](http://localhost:3000/) in your browser
 
 ***NOTE:*** *The service workers for this app will only cache the site when it is in production mode.*
+## How to run the project in Production Mode
+
+1. Build the production ready optimized code. `npm run build`
+2. Host the production ready code online (ex. GitHub pages)
