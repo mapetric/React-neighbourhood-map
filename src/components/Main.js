@@ -74,10 +74,12 @@ class Main extends Component {
             // event listener that displays an info window for the clicked marker and animates it
 
             marker.addListener('click', ()=> {
+                this.state.mapGoogle.panTo(marker.getPosition());
                 this.state.infoWindow.setContent(`
-                    <div>
+                    <div tabIndex="1" name=${marker.title}>
                         <p>${marker.title}</p>
                         <img class="img" src=${this.state.images.filter((image)=>image.title===marker.title)[0].url} alt="image of ${marker.title}"/>
+                        <p>image by <a tabIndex="1" href="https://foursquare.com/">FOURSQUARE</a></p>
                     </div>`)
                 this.state.infoWindow.open(map, marker)
                 marker.setAnimation(window.google.maps.Animation.BOUNCE)
@@ -132,7 +134,7 @@ class Main extends Component {
                 <div className="map-container">
                     <div id="map" aria-hidden="true" role="application"/>
                 </div>
-                <SideBar images={ this.state.images } mapGoogle={ this.state.mapGoogle} infoWindow={ this.state.infoWindow } markers={ this.state.markers } showingMarkers={ this.state.myLocations.filter((location) => location.showing).sort(sortBy('title')) } filterByType={ this.filterByType } />
+                <SideBar mapGoogle={ this.state.mapGoogle } images={ this.state.images } mapGoogle={ this.state.mapGoogle} infoWindow={ this.state.infoWindow } markers={ this.state.markers } showingMarkers={ this.state.myLocations.filter((location) => location.showing).sort(sortBy('title')) } filterByType={ this.filterByType } />
             </div>
         )
     }
